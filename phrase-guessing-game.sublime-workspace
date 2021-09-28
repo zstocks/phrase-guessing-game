@@ -1,0 +1,1316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ta",
+				"targetSpace"
+			],
+			[
+				"up",
+				"updateGameState"
+			],
+			[
+				"targ",
+				"targetSpace"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"players",
+				"switchPlayers"
+			],
+			[
+				"tar",
+				"targetSpace"
+			],
+			[
+				"col",
+				"columnLocation"
+			],
+			[
+				"spa",
+				"spaces"
+			],
+			[
+				"player",
+				"player1"
+			],
+			[
+				"ho",
+				"hobbies"
+			],
+			[
+				"a",
+				"allMovies"
+			],
+			[
+				"use",
+				"usersObject"
+			],
+			[
+				"user",
+				"usersObject"
+			],
+			[
+				"str",
+				"stringPrices"
+			],
+			[
+				"ne",
+				"nextElementSibling"
+			],
+			[
+				"isVa",
+				"isValidName"
+			],
+			[
+				"remo",
+				"removeAttribute"
+			],
+			[
+				"data",
+				"data-day-and-time"
+			],
+			[
+				"payment",
+				"paymentMethods"
+			],
+			[
+				"activityC",
+				"activityCheckboxes"
+			],
+			[
+				"isVal",
+				"isValidName"
+			],
+			[
+				"ad",
+				"advancedValidation"
+			],
+			[
+				"ccN",
+				"ccNum"
+			],
+			[
+				"isV",
+				"isValidCredit"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"activities",
+				"activitiesHint"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"ch",
+				"checkboxes"
+			],
+			[
+				"emai",
+				"emailHint"
+			],
+			[
+				"pa",
+				"paymentType"
+			],
+			[
+				"pay",
+				"paypal"
+			],
+			[
+				"ac",
+				"activitiesCost"
+			],
+			[
+				"acti",
+				"activityCost"
+			],
+			[
+				"shi",
+				"shirtDesign"
+			],
+			[
+				"shir",
+				"shirtColor"
+			],
+			[
+				"month",
+				"month-view"
+			],
+			[
+				"mon",
+				"monthDiv"
+			],
+			[
+				"ss-sec",
+				"ss-sections"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"this",
+				"thisMonth"
+			],
+			[
+				"ye",
+				"yearUl"
+			],
+			[
+				"yea",
+				"yearUl"
+			],
+			[
+				"sep",
+				"september"
+			],
+			[
+				"new",
+				"newList"
+			],
+			[
+				"se",
+				"searchInput"
+			],
+			[
+				"sea",
+				"searchInput"
+			],
+			[
+				"outline",
+				"outline-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"fle",
+				"flex-wrap"
+			],
+			[
+				"light",
+				"lightgreen"
+			],
+			[
+				"scre",
+				"screenSize"
+			],
+			[
+				"senior-succes",
+				"senior-success-navigation"
+			],
+			[
+				"tog",
+				"toggleNav"
+			],
+			[
+				"ssN",
+				"ssNavChildren"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"cre",
+				"createLabel"
+			],
+			[
+				"coll",
+				"collegeNameInput"
+			],
+			[
+				"college",
+				"collegeName"
+			],
+			[
+				"dropdown",
+				"dropdown-menu"
+			],
+			[
+				"fi",
+				"first-of-type"
+			],
+			[
+				"wrap",
+				"word-wrap"
+			],
+			[
+				"mobile",
+				"mobile-only"
+			],
+			[
+				"college-advi",
+				"college-advisors"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"fu",
+				"fullName"
+			],
+			[
+				"contactS",
+				"contactSubmitted"
+			],
+			[
+				"abo",
+				"about-us"
+			],
+			[
+				"rightCol",
+				"rightColorBox"
+			],
+			[
+				"leftColo",
+				"leftColorBox"
+			],
+			[
+				"imgB",
+				"imgBoxLeft"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"_S",
+				"_SESSION"
+			],
+			[
+				"gradYearC",
+				"gradYearChoice"
+			],
+			[
+				"antici",
+				"anticipation"
+			],
+			[
+				"anti",
+				"anticipation"
+			],
+			[
+				"anticip",
+				"anticipation"
+			],
+			[
+				"Enrollm",
+				"Enrollment_Type"
+			],
+			[
+				"topAns",
+				"topAnswer"
+			],
+			[
+				"gre",
+				"greekNo"
+			],
+			[
+				"Stud",
+				"Student"
+			],
+			[
+				"colleg",
+				"collegeTally"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"scho",
+				"schoolId"
+			],
+			[
+				"grad",
+				"gradYearChoice"
+			],
+			[
+				"admin",
+				"adminId"
+			],
+			[
+				"adm",
+				"adminId"
+			],
+			[
+				"upd",
+				"updatePass"
+			],
+			[
+				"pass",
+				"passMessage"
+			],
+			[
+				"string",
+				"string_length"
+			],
+			[
+				"newP",
+				"newPass"
+			],
+			[
+				"text",
+				"text-decoration\tproperty"
+			],
+			[
+				"conf",
+				"confirmPass"
+			],
+			[
+				"con",
+				"confirmPass"
+			],
+			[
+				"val",
+				"validPass"
+			],
+			[
+				"confirm",
+				"confirmPassword"
+			],
+			[
+				"newPa",
+				"newPassword"
+			],
+			[
+				"Scholar",
+				"Scholarships"
+			],
+			[
+				"schola",
+				"scholarships"
+			],
+			[
+				"schol",
+				"scholarshipId"
+			],
+			[
+				"getMa",
+				"getMay"
+			],
+			[
+				"addN",
+				"addNewScholarship"
+			],
+			[
+				"f",
+				"form\tAttr"
+			],
+			[
+				"Schola",
+				"Scholarships"
+			],
+			[
+				"sub",
+				"submitNewScholarship"
+			],
+			[
+				"bol",
+				"bolder\tfont-weight"
+			],
+			[
+				"getR",
+				"getResId"
+			],
+			[
+				"student",
+				"studentIsSelected"
+			],
+			[
+				"Class",
+				"ClassSize"
+			],
+			[
+				"Best",
+				"Best_Fit_Responses"
+			],
+			[
+				"stu",
+				"student"
+			],
+			[
+				"getStuden",
+				"getStudentData"
+			],
+			[
+				"select",
+				"selectStudent"
+			],
+			[
+				"inl",
+				"inline\tdisplay"
+			],
+			[
+				"editA",
+				"editAdminInfo"
+			],
+			[
+				"adminI",
+				"adminInfo"
+			],
+			[
+				"edit",
+				"editOn"
+			],
+			[
+				"edi",
+				"editOn"
+			],
+			[
+				"b",
+				"bolder\tfont-weight"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"delete",
+				"deleteMe"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2604,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAA8AAAAAAAAAEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADwAAAAAAAAAPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAAA8AAAAAAAAADwAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "css/styles.css",
+			"settings":
+			{
+				"buffer_size": 3046,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAABEAAAAAAAAAEgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEQAAAAAAAAARAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAABEAAAAAAAAAEQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAEgAAAAAAAAASAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 69,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEUAAAAAAAAARgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARQAAAAAAAABFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEUAAAAAAAAARQAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAARgAAAAAAAABGAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "js/Game.js",
+			"settings":
+			{
+				"buffer_size": 70,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEYAAAAAAAAARwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARgAAAAAAAABGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEYAAAAAAAAARgAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAARwAAAAAAAABHAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "js/Phrase.js",
+			"settings":
+			{
+				"buffer_size": 72,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEgAAAAAAAAASQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASAAAAAAAAABIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEgAAAAAAAAASAAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAASQAAAAAAAABJAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"set syntax: java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax: php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax: j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax",
+				"Set Syntax: PHP"
+			],
+			[
+				"set syntax: H",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax: ",
+				"Set Syntax: PHP"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn",
+				"Set Syntax: PHP"
+			],
+			[
+				"sy",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntax: php",
+				"Set Syntax: PHP"
+			],
+			[
+				"pa",
+				"Package Control: Enable Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ph",
+				"Set Syntax: PHP"
+			],
+			[
+				"set syntax",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax:css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax: jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set s",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax: htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set Styntax: java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set Styntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntax: html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax: htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax: ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax: javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax: pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"git:",
+				"git: commit"
+			],
+			[
+				"gitsavvy: ",
+				"GitSavvy: help"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:",
+				"Package Control: Install Package"
+			],
+			[
+				"synta",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntax: scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"syntax: sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Install Package Control"
+			],
+			[
+				"syntax:php",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntax: xml",
+				"Set Syntax: XML"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 221.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/A00906502/Documents/Projects/phrase-guessing-game",
+		"/C/Users/A00906502/Documents/Projects/phrase-guessing-game/js"
+	],
+	"file_history":
+	[
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/js/app.js",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/js/Game.js",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/js/Board.js",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/js/Space.js",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/js/Token.js",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/js/Player.js",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/index.html",
+		"/C/Users/A00906502/Documents/Projects/four-in-a-row/css/style.css",
+		"/C/Users/A00906502/Documents/TechDegree/library-app/Book.js",
+		"/C/Users/A00906502/Documents/TechDegree/library-app/Patron.js",
+		"/C/Users/A00906502/Documents/TechDegree/library-app/Library.js",
+		"/C/Users/A00906502/Documents/TechDegree/node programs/node-test.js",
+		"/C/Users/A00906502/Documents/TechDegree/node programs/iteration.js",
+		"/C/Users/A00906502/Documents/TechDegree/node programs/fruits.js",
+		"/C/Users/A00906502/Documents/TechDegree/node programs/pets.js",
+		"/C/Users/A00906502/Documents/TechDegree/node programs/Pet.js",
+		"/C/Users/A00906502/Documents/Projects/zs-interactive-form/js/script.js",
+		"/C/Users/A00906502/Documents/Projects/zs-interactive-form/README.md",
+		"/C/Users/A00906502/Documents/gufc-development/scholarships.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/js/college-terms.js",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/js/college-terms-page-and-search.js",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/index.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/js/ss-nav.js",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/include/ss-navigation.php",
+		"/C/Users/A00906502/Documents/gufc-development/css/site-nav.css",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/include/senior-success-head.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/css/senior-success.css",
+		"/C/Users/A00906502/Documents/gufc-development/css/senior-success.css",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-include/manual-header.php",
+		"/C/Users/A00906502/Documents/gufc-development/css/gufc.css",
+		"/C/Users/A00906502/Documents/gufc-development/css/footer.css",
+		"/C/Users/A00906502/Documents/gufc-development/include/site-wide-header.php",
+		"/C/Users/A00906502/Documents/gufc-development/css/page-reset.css",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/colleges-and-universities.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/technical-colleges.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/college-index-comparison.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/deferments.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/senior-success-calendar.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/college-terms.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/program-information/gear-up-overview.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/js/college-tracker-app.js",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/monthly-data-entry/creating-service-activities.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/research-and-evaluation-overview.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/program-information/partner-schools-contact.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-include/table-of-contents.php",
+		"/C/Users/A00906502/Documents/gufc-development/a-test-page.php",
+		"/C/Users/A00906502/Documents/gufc-development/senior-success/college-tracker.php",
+		"/C/Users/A00906502/Documents/gufc-development/js/senior-success.js",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/online-resources.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/developing-a-gear-up-webpage.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/sc-manual-home.php",
+		"/C/Users/A00906502/Documents/gufc-development/index.php",
+		"/C/Users/A00906502/Documents/gufc-development/include/nav.php",
+		"/C/Users/A00906502/Documents/gufc-development/resources/graduating-seniors/college-advisors.php",
+		"/C/Users/A00906502/Documents/gufc-development/resources/graduating-seniors/index.php",
+		"/C/Users/A00906502/Documents/gufc-development/admin/edit-scholarship.php",
+		"/C/Users/A00906502/Documents/web development/scholarships-backup-7-8-2021.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-js/scm-index.js",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/media-release-form.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/media-release-form-spanish.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/sample-media-advisory.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-include/manual-index.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/annual-workplan/annual-workplan-process.php",
+		"/C/Users/A00906502/Documents/gufc-development/resources/college-insights-and-advice/college-insights-and-advice.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/style-guide.php",
+		"/C/Users/A00906502/Documents/gufc-development/include/footer.php",
+		"/C/Users/A00906502/Downloads/scholarship-banners-april.jpg",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-css/sc-forms.css",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-css/sc-manual.css",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-css/table-of-contents.css",
+		"/C/Users/A00906502/Documents/Projects/gufc.sublime-project",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-js/table-of-contents.js",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/risk-assessment/risk-management-plans.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/risk-assessment/risk-analysis-guide.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/expenditure-detail-form.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/risk-assessment/risk-assessment-introduction.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/monthly-match-summary.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/volunteer-certification-match-form.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/student-family-activity-sign-in.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/student-activity-sign-in.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/professional-development-sign-in.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/parent-guardian-activity-sign-in.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/match-contribution-of-goods-statement.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/invoice-form.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/forms/in-kind-match-school-staff.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/sample-press-release.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/talking-points.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/media-outreach-press-coverage.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/social-media-accounts.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/communication-guidelines/photo-release-guidelines.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/usu-stars-gear-up-conference-travel-guidelines.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/in-kind-match-and-cost-share-training/cost-share-training.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/student-classes-camps-college-credit.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/invoicing-guidelines.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/unallowable-food-purchases.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/meal-beverage-snack-allowances.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/workshop-supply-allowances.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/allowable-and-unallowable-costs.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/audits.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/expenditures-and-reimbursement-procedures/funding-regulations.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/building-data-structure.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/scribe-service-naming-conventions.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/creating-and-using-service-templates-and-student-groups.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/data-imports.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/course-data-building-guidelines.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/data-entry-timeline-check-list.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/database-entries-and-definitions.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/data-collection-and-reporting-procedures/data-collection-plan-and-check-list.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/annual-workplan/annual-workplan-form.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-include/regular-page.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-include/scroll-to-top.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-js/scroll-to-top.js",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-css/manual-home.css",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-include/manual-breadcrumb.php",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-css/manual-index.css",
+		"/C/Users/A00906502/Documents/gufc-development/sc-manual/manual-css/scroll-to-top.css",
+		"/C/Users/A00906502/Documents/Site Backup/index.html",
+		"/C/xampp/htdocs/gufc-production/about/about-us.php",
+		"/C/Users/A00906502/Documents/gufc-development/about/about-us.php",
+		"/C/Users/A00906502/Documents/gufc-development/resources/best-fit-college-navigator/college-array.php",
+		"/C/Users/A00906502/Documents/gufc-development/resources/best-fit-college-navigator/best-fit-results.php",
+		"/C/Users/A00906502/Documents/gufc-development/bgproc/calculate-results.php",
+		"/C/Users/A00906502/Documents/gufc-development/resources/scholarships/scholarship-banks.php",
+		"/C/xampp/htdocs/gufc-production/resources/scholarships/scholarship-banks.php",
+		"/C/xampp/htdocs/gufc-production/css/gufc.css",
+		"/C/xampp/htdocs/gufc-production/css/about-section.css",
+		"/C/Users/A00906502/Documents/gufc-development/css/about-section.css",
+		"/C/xampp/htdocs/gufc-production/include/nav.php"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 148.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"activityCost"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"totalCost"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 1,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 69,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 1,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/Game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 1,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/Phrase.js",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 72,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 1,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 57.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.32432,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 356.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "phrase-guessing-game.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
