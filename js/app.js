@@ -1,15 +1,18 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * app.js */
+const start = document.querySelector('#btn__reset');
 const keyboard = document.querySelector('#qwerty');
+const game = new Game();
 
-const myPhrase = new Phrase('Jacqalyn is amazing!');
-myPhrase.addPhraseToDisplay();
+start.addEventListener('click', () => {
+ game.startGame();
+});
 
 keyboard.addEventListener('click', (e) => {
- myPhrase.checkLetter(e);
+ game.handleInteraction(e);
 });
 
 document.addEventListener('keyup', (e) => {
- myPhrase.checkLetter(e);
+ 
 });
