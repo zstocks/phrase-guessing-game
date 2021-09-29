@@ -53,7 +53,19 @@ class Phrase {
   }
  }
 
- showMatchedLetter() {
+ /**
+  * Displays letters in the phrase that match the player's selection
+  * @param (string) playerSelection - the player's chosen character
+  */
+ showMatchedLetter(playerSelection) {
+  // Select all html elements with the letter class, and convert the htmlCollection to an array.
+  const letters = Array.from(document.getElementsByClassName('letter'));
 
+  // Map over the array of letters, if any letters in the phrase match the player's selection display those letters.
+  letters.map(letter => {
+   if (letter.classList.contains(playerSelection)) {
+    letter.classList.replace('hide', 'show');
+   }
+  });
  }
 }
