@@ -4,17 +4,23 @@
 const start = document.querySelector('#btn__reset');
 const keyboard = document.querySelector('#qwerty');
 
-// initiating the game class outside of the start button event handler so handleInteraction in the keyup event won't be undefined.
-const game = new Game();
+// declare game variable with global scope
+let game;
 
+// when the start button is clicked, instantiate a new game object and start the game 
 start.addEventListener('click', () => {
+ game = new Game();
  game.startGame();
 });
 
+// handle interactions with the onscreen keyboard 
 keyboard.addEventListener('click', (e) => {
  game.handleInteraction(e);
 });
 
+// handle keyboard inputs
 document.addEventListener('keyup', (e) => {
- game.handleInteraction(e);
+ if (game !== undefined) {
+  game.handleInteraction(e);
+ }
 });

@@ -64,17 +64,18 @@
    if (e.type === 'keyup' && /^[a-z]$/.test(e.key)) {
     const chosenLetter = e.key;
 
-    // get the matching button element that corresponds to the keyboard input
+    // get the matching button element that corresponds to the keyboard input 
+    // - if key has already been used, matchingBtn will contain undefined
     const keys = Array.from(document.getElementsByClassName('key'));
+    console.log(keys);
     const matchingBtn = keys.find(key => key.textContent === chosenLetter);
 
-    // ensure the keyboard input has not already been used
-    if (!usedKeys.includes(chosenLetter)) {
-     usedKeys.push(chosenLetter);
+    // if the matching button has not previously been selected by the player
+    if (matchingBtn !== undefined) {
 
      // if chosenLetter is in the phrase
      if (phrase.checkLetter(e)) {
-      matchingBtn.classList.add('chosen');
+      matchingBtn.classList.replace('key', 'chosen');
       phrase.showMatchedLetter(chosenLetter);
 
       if (this.checkForWin()) {
@@ -82,7 +83,7 @@
       }
 
      } else {
-      matchingBtn.classList.add('wrong');
+      matchingBtn.classList.replace('key', 'wrong');
       this.removeLife();
      }
     }
