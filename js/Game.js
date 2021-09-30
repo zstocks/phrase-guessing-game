@@ -13,13 +13,18 @@
     'Zoology is fun'
    ];
    this.activePhrase = null;
+
+   // the ready property prevents keyboard input while overlay is displayed
+   this.ready = false; 
   }
 
   /**
-   * Starts a new game by hiding the start-overlay and displaying a random hidden phrase
+   * Resets the game, hides the overlay, enables keyboard input, and displays a random hidden phrase
    */
   startGame() {
+   this.reset();
    document.querySelector('#overlay').style.display = 'none';
+   this.ready = true;
    this.activePhrase = new Phrase(this.getRandomPhrase());
    this.activePhrase.addPhraseToDisplay();
   }
@@ -46,7 +51,7 @@
 
      // if chosenLetter is in the phrase
      if (phrase.checkLetter(e)) {
-      chosenLetter.classList.add('chosen');
+      chosenLetter.className = 'chosen';
       phrase.showMatchedLetter(chosenLetter.textContent);
 
       if (this.checkForWin()) {
@@ -54,28 +59,32 @@
       }
 
      } else {
-      chosenLetter.classList.add('wrong');
+      chosenLetter.className = 'wrong';
       this.removeLife();
      }
     }
    }
    
-   // if interaction is keyboard input AND a lowercase letter - ignore all other keys
-   if (e.type === 'keyup' && /^[a-z]$/.test(e.key)) {
+   // if interaction is keyboard input 
+   // AND selection is a lowercase letter
+   // AND the game's ready state is true
+   if (e.type === 'keyup' 
+       && /^[a-z]$/.test(e.key) 
+       && this.ready === true) {
     const chosenLetter = e.key;
 
     // get the matching button element that corresponds to the keyboard input 
     // - if key has already been used, matchingBtn will contain undefined
     const keys = Array.from(document.getElementsByClassName('key'));
-    console.log(keys);
     const matchingBtn = keys.find(key => key.textContent === chosenLetter);
 
     // if the matching button has not previously been selected by the player
     if (matchingBtn !== undefined) {
+     matchingBtn.setAttribute('disabled', '');
 
      // if chosenLetter is in the phrase
      if (phrase.checkLetter(e)) {
-      matchingBtn.classList.replace('key', 'chosen');
+      matchingBtn.className = 'chosen';
       phrase.showMatchedLetter(chosenLetter);
 
       if (this.checkForWin()) {
@@ -83,7 +92,7 @@
       }
 
      } else {
-      matchingBtn.classList.replace('key', 'wrong');
+      matchingBtn.className = 'wrong';
       this.removeLife();
      }
     }
@@ -111,14 +120,37 @@
    const overlay = document.querySelector('#overlay');
    const message = document.querySelector('#game-over-message');
 
+   // clear out previous message and display the overlay
+   message.textContent = '';
    overlay.style.display = 'flex';
 
+   // determine which overlay style and message to display
    if (this.missed > 4) {
-    overlay.classList.replace('start', 'lose');
+    overlay.className = 'lose';
     message.insertAdjacentHTML('beforeend', `You Lost &#128531; Better Luck Next Time!`);
    } else {
-    overlay.classList.replace('start', 'win');
+    overlay.className = 'win';
     message.insertAdjacentHTML('beforeend', `You Won &#128518; You're Amazing!`);
    }
+
+   this.ready = false;
+  }
+
+  reset() {
+   const letters = Array.from(document.querySelectorAll('#phrase li'));
+   const usedKeys = Array.from(document.querySelectorAll('button.wrong, button.chosen'));
+   const hearts = Array.from(document.querySelectorAll('#scoreboard img'));
+
+   // clear out the previous phrase
+   letters.forEach(letter => letter.remove());
+
+   // enable used keys on the onscreen keyboard
+   usedKeys.forEach(key => {
+    key.className = 'key';
+    key.removeAttribute('disabled');
+   });
+
+   // reset all hearts to live hearts
+   hearts.forEach(heart => heart.src = 'images/liveHeart.png');
   }
  }
