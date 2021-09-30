@@ -33,18 +33,58 @@
   }
 
   handleInteraction(e) {
-   const chosenLetter = e.target;
-   if (chosenLetter.tagName === 'BUTTON') {
-    chosenLetter.setAttribute('disabled', ''); // need to also disable keyboard inputs
-    if (this.activePhrase.checkLetter(e)) {
-     chosenLetter.classList.add('chosen');
-     this.activePhrase.showMatchedLetter(chosenLetter.textContent);
-     if (this.checkForWin()) {
-      this.gameOver();
+   const phrase = this.activePhrase;
+   const usedKeys = phrase.usedKeys;
+
+   // if interaction is a click anywhere on the keyboard element
+   if (e.type === 'click') {
+    const chosenLetter = e.target;
+
+    // Continue the method ONLY IF the click occured on a button
+    if (chosenLetter.tagName === 'BUTTON') {
+     chosenLetter.setAttribute('disabled', '');
+
+     // if chosenLetter is in the phrase
+     if (phrase.checkLetter(e)) {
+      chosenLetter.classList.add('chosen');
+      phrase.showMatchedLetter(chosenLetter.textContent);
+
+      if (this.checkForWin()) {
+       this.gameOver();
+      }
+
+     } else {
+      chosenLetter.classList.add('wrong');
+      this.removeLife();
      }
-    } else {
-     chosenLetter.classList.add('wrong');
-     this.removeLife();
+    }
+   }
+   
+   // if interaction is keyboard input AND a lowercase letter - ignore all other keys
+   if (e.type === 'keyup' && /^[a-z]$/.test(e.key)) {
+    const chosenLetter = e.key;
+
+    // get the matching button element that corresponds to the keyboard input
+    const keys = Array.from(document.getElementsByClassName('key'));
+    const matchingBtn = keys.find(key => key.textContent === chosenLetter);
+
+    // ensure the keyboard input has not already been used
+    if (!usedKeys.includes(chosenLetter)) {
+     usedKeys.push(chosenLetter);
+
+     // if chosenLetter is in the phrase
+     if (phrase.checkLetter(e)) {
+      matchingBtn.classList.add('chosen');
+      phrase.showMatchedLetter(chosenLetter);
+
+      if (this.checkForWin()) {
+       this.gameOver();
+      }
+
+     } else {
+      matchingBtn.classList.add('wrong');
+      this.removeLife();
+     }
     }
    }
   }
@@ -67,13 +107,17 @@
   }
 
   gameOver() {
-   document.querySelector('#overlay').style.display = 'flex';
+   const overlay = document.querySelector('#overlay');
    const message = document.querySelector('#game-over-message');
+
+   overlay.style.display = 'flex';
+
    if (this.missed > 4) {
+    overlay.classList.replace('start', 'lose');
     message.insertAdjacentHTML('beforeend', `You Lost &#128531; Better Luck Next Time!`);
    } else {
+    overlay.classList.replace('start', 'win');
     message.insertAdjacentHTML('beforeend', `You Won &#128518; You're Amazing!`);
    }
-   
   }
  }

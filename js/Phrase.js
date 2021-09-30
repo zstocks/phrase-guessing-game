@@ -5,6 +5,7 @@
 class Phrase {
  constructor(phrase) {
   this.phrase = phrase.toLowerCase();
+  this.usedKeys = [];
  }
 
  /**
@@ -45,11 +46,7 @@ class Phrase {
 
   // handle input from keyboard events
   if (e.type === 'keyup') {
-   const character = e.key.toLowerCase();
-
-   if (/^[a-z]$/.test(character)) {
-    return this.phrase.includes(character) ? true : false;
-   }
+   return this.phrase.includes(e.key) ? true : false;
   }
  }
 
