@@ -5,11 +5,16 @@
   constructor() {
    this.missed = 0;
    this.phrases = [
-    'Kawashi likes to play',
-    'Rumi enjoys lots of food',
-    'Jackie is super smoking hot',
-    'Zach is wearing shorts',
-    'The alphabet goes abcdefghijklmnopqrstuvwxy and z'
+    new Phrase('zebras zig and zebras zag'),
+    new Phrase('she sees cheese on top of louise'),
+    new Phrase('four fine fresh fish for you'),
+    new Phrase('she sells seashells on the seashore'),
+    new Phrase('sheep should sleep in a shed'),
+    new Phrase('lucky rabbits like to cause a ruckus'),
+    new Phrase('kitty caught the kitten in the kitchen'),
+    new Phrase('we surely shall see the sunshine soon'),
+    new Phrase('six slimy snails slid slowly seaward'),
+    new Phrase('bob the big bunny bobbled by the blueberry bush')
    ];
    this.activePhrase = null;
 
@@ -24,7 +29,7 @@
    this.reset();
    document.querySelector('#overlay').style.display = 'none';
    this.ready = true;
-   this.activePhrase = new Phrase(this.getRandomPhrase());
+   this.activePhrase = this.getRandomPhrase();
    this.activePhrase.addPhraseToDisplay();
   }
 
@@ -33,7 +38,7 @@
    * @returns (string) A random phrase from the phrases array
    */
   getRandomPhrase() {
-   return this.phrases[Math.floor(Math.random() * 5)];
+   return this.phrases[Math.floor(Math.random() * this.phrases.length)];
   }
 
   /**
