@@ -1,22 +1,22 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * Phrase.js */
-
 class Phrase {
  constructor(phrase) {
   this.phrase = phrase.toLowerCase();
  }
 
  /**
-  * Creates and appends to the DOM li objects for each character in the phrase
+  * Creates and appends li elements for each character in the phrase
   */
  addPhraseToDisplay() {
-  // convert the phrase to an array of characters containing only letters and spaces
+
+  // convert the phrase to an array of characters containing only lowercase letters and spaces
   const characters = this.phrase
    .split('')
    .filter(character => /^[a-z ]$/.test(character));
 
-  // create and append li element with the appropriate classes
+  // create and append li element with the appropriate class names
   characters.forEach(character => {
    const li = document.createElement('li');
 
@@ -34,16 +34,13 @@ class Phrase {
  /**
   * Checks if the input from the user matches a character in the phrase
   * @param (object) e - the event object
-  * @return (boolean) - true if the input matches one or more characters in the phrase
+  * @return (boolean) - true if the input matches at least one character in the phrase
   */
  checkLetter(e) {
-  // handle input from click events
   if (e.type === 'click') {
-   const character = e.target.textContent;
-   return this.phrase.includes(character) ? true : false;
+   return this.phrase.includes(e.target.textContent) ? true : false;
   }
 
-  // handle input from keyboard events
   if (e.type === 'keyup') {
    return this.phrase.includes(e.key) ? true : false;
   }
@@ -54,10 +51,11 @@ class Phrase {
   * @param (string) chosenLetter - the player's chosen character
   */
  showMatchedLetter(chosenLetter) {
-  // Select all html elements with the letter class, and convert the htmlCollection to an array.
+
+  // create an array of all html elements with the letter class
   const letters = Array.from(document.getElementsByClassName('letter'));
 
-  // Map over the array of letters, if any letters in the phrase match the player's selection display those letters.
+  // display any letters in the phrase match the player's selection
   letters.map(letter => {
    if (letter.classList.contains(chosenLetter)) {
     letter.classList.replace('hide', 'show');

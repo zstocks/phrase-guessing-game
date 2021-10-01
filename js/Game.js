@@ -1,20 +1,19 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
  * Game.js */
-
  class Game {
   constructor() {
    this.missed = 0;
    this.phrases = [
-    'Frogs are amphibians',
-    'Deer are mammals',
-    'Snakes are reptiles',
-    'Kangaroos are marsupials',
-    'Zoology is fun'
+    'Kawashi likes to play',
+    'Rumi enjoys lots of food',
+    'Jackie is super smoking hot',
+    'Zach is wearing shorts',
+    'The alphabet goes abcdefghijklmnopqrstuvwxy and z'
    ];
    this.activePhrase = null;
 
-   // the ready property prevents keyboard input while overlay is displayed
+   // the ready property prevents keyboard input while the overlay is displayed
    this.ready = false; 
   }
 
@@ -37,11 +36,14 @@
    return this.phrases[Math.floor(Math.random() * 5)];
   }
 
+  /**
+   * Handles input when a user clicks a button or enters a letter with their physical keyboard
+   * @param (object) e - the event object - either a 'click' or a 'keyup' event
+   */
   handleInteraction(e) {
    const phrase = this.activePhrase;
    const usedKeys = phrase.usedKeys;
 
-   // if interaction is a click anywhere on the keyboard element
    if (e.type === 'click') {
     const chosenLetter = e.target;
 
@@ -58,6 +60,7 @@
        this.gameOver();
       }
 
+      // if chosenLetter is not in the phrase
      } else {
       chosenLetter.className = 'wrong';
       this.removeLife();
@@ -73,12 +76,11 @@
        && this.ready === true) {
     const chosenLetter = e.key;
 
-    // get the matching button element that corresponds to the keyboard input 
-    // - if key has already been used, matchingBtn will contain undefined
+    /* get the button element that corresponds to the keyboard input **
+    ** if key has already been used, matchingBtn will be undefined   */
     const keys = Array.from(document.getElementsByClassName('key'));
     const matchingBtn = keys.find(key => key.textContent === chosenLetter);
 
-    // if the matching button has not previously been selected by the player
     if (matchingBtn !== undefined) {
      matchingBtn.setAttribute('disabled', '');
 
@@ -91,6 +93,7 @@
        this.gameOver();
       }
 
+      // if chosenLetter is not in the phrase
      } else {
       matchingBtn.className = 'wrong';
       this.removeLife();
@@ -99,11 +102,17 @@
    }
   }
 
+  /**
+   * Increments the missed property and swaps the live heart for a lost heart
+   */
   removeLife() {
    this.missed += 1;
 
+   // create an array containing all heart images and filter to keep only the live hearts in the array
    let liveHearts = Array.from(document.querySelectorAll('#scoreboard img'));
-   liveHearts = liveHearts.filter(heart => heart.src.includes('images/liveHeart.png')); 
+   liveHearts = liveHearts.filter(heart => heart.src.includes('images/liveHeart.png'));
+
+   // swap the first heart image in the array for a lost heart
    liveHearts[0].src = 'images/lostHeart.png';
 
    if (this.missed > 4) {
@@ -111,11 +120,18 @@
    }
   }
 
+  /**
+   * Check to see if the player has any hidden letters left in the phrase
+   * @returns (boolean) true means the player has won.
+   */
   checkForWin() {
    const stillHidden = Array.from(document.getElementsByClassName('hide'));
    return stillHidden.length < 1 ? true : false;
   }
 
+  /**
+   * Displays a winning or losing overlay and message when the game has ended
+   */
   gameOver() {
    const overlay = document.querySelector('#overlay');
    const message = document.querySelector('#game-over-message');
@@ -136,6 +152,9 @@
    this.ready = false;
   }
 
+  /**
+   * Removes phrase li elements, enables onscreen keyboard, and displays all live hearts
+   */
   reset() {
    const letters = Array.from(document.querySelectorAll('#phrase li'));
    const usedKeys = Array.from(document.querySelectorAll('button.wrong, button.chosen'));
@@ -144,7 +163,7 @@
    // clear out the previous phrase
    letters.forEach(letter => letter.remove());
 
-   // enable used keys on the onscreen keyboard
+   // enable any used keys in the onscreen keyboard
    usedKeys.forEach(key => {
     key.className = 'key';
     key.removeAttribute('disabled');
