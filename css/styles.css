@@ -8,7 +8,7 @@
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
-  --color-neutral-light: #D2D2D2;
+  --color-neutral-dark: #000;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
@@ -99,7 +99,7 @@ button {
   padding: 20px 1px 0 1px;
   margin-right: 2px;
   color: transparent;
-  background: var(--color-neutral-light);
+  background: var(--color-neutral-dark);
   border-radius: 5px;
 }
 
@@ -111,12 +111,14 @@ button {
 
 .show {
   color: #fff;
-  background-color: #4ac0d5;
+  background-color: #78cf82;
   font-size: 20px;
+  font-weight: bold;
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;
   margin-right: 2px;
+  border: 1px solid #000;
   border-radius: 5px;
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
@@ -130,15 +132,23 @@ button {
   justify-content: center;
 }
 
+.keyrow button {
+  border: 1px solid #000;
+}
+
+.key {
+  background-color: #fff;
+}
+
 .chosen {
-  background: #3a3f58;
+  background: #78cf82;
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
 
 .wrong {
-  background: #f7a964;
+  background: #f5785f;
   color: #FFFFFF;
 }
 
@@ -146,6 +156,7 @@ button {
   padding: 16px;
   margin: 50px auto;
   background: #f7a964;
+  border: 1px solid #000;
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
@@ -172,7 +183,6 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 5px;
 }
 
 .title {
@@ -180,7 +190,7 @@ button {
 }
 
 .start {
-  background-color: #3a3f58;
+  background-color: #000;
 }
 
 .start a {
