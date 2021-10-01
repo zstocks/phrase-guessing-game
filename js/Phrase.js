@@ -48,16 +48,16 @@ class Phrase {
 
  /**
   * Displays letters in the phrase that match the player's selection
-  * @param (string) chosenLetter - the player's chosen character
+  * @param (string) playerSelection - the player's chosen character
   */
- showMatchedLetter(chosenLetter) {
+ showMatchedLetter(playerSelection) {
 
   // create an array of all html elements with the letter class
   const letters = Array.from(document.getElementsByClassName('letter'));
 
   // display any letters in the phrase match the player's selection
   letters.map(letter => {
-   if (letter.classList.contains(chosenLetter)) {
+   if (letter.classList.contains(playerSelection)) {
     letter.classList.replace('hide', 'show');
    }
   });

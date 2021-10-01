@@ -35,7 +35,7 @@
 
   /**
    * Randomly selects a phrase for the game
-   * @returns (string) A random phrase from the phrases array
+   * @returns (string) A random phrase object from the phrases array
    */
   getRandomPhrase() {
    return this.phrases[Math.floor(Math.random() * this.phrases.length)];
@@ -47,29 +47,13 @@
    */
   handleInteraction(e) {
    const phrase = this.activePhrase;
-   const usedKeys = phrase.usedKeys;
 
    if (e.type === 'click') {
-    const chosenLetter = e.target;
+    const onscreenBtn = e.target;
 
     // Continue the method ONLY IF the click occured on a button
-    if (chosenLetter.tagName === 'BUTTON') {
-     chosenLetter.setAttribute('disabled', '');
-
-     // if chosenLetter is in the phrase
-     if (phrase.checkLetter(e)) {
-      chosenLetter.className = 'chosen';
-      phrase.showMatchedLetter(chosenLetter.textContent);
-
-      if (this.checkForWin()) {
-       this.gameOver();
-      }
-
-      // if chosenLetter is not in the phrase
-     } else {
-      chosenLetter.className = 'wrong';
-      this.removeLife();
-     }
+    if (onscreenBtn.tagName === 'BUTTON') {
+     this.finishTurn(e, onscreenBtn, phrase);
     }
    }
    
@@ -79,31 +63,40 @@
    if (e.type === 'keyup' 
        && /^[a-z]$/.test(e.key) 
        && this.ready === true) {
-    const chosenLetter = e.key;
+    const playerSelection = e.key;
 
-    /* get the button element that corresponds to the keyboard input **
-    ** if key has already been used, matchingBtn will be undefined   */
+    /* select the HTML button element that corresponds to the player's selection **
+    ** if key has already been used, onscreenBtn will be undefined */
     const keys = Array.from(document.getElementsByClassName('key'));
-    const matchingBtn = keys.find(key => key.textContent === chosenLetter);
+    const onscreenBtn = keys.find(key => key.textContent === playerSelection);
 
-    if (matchingBtn !== undefined) {
-     matchingBtn.setAttribute('disabled', '');
-
-     // if chosenLetter is in the phrase
-     if (phrase.checkLetter(e)) {
-      matchingBtn.className = 'chosen';
-      phrase.showMatchedLetter(chosenLetter);
-
-      if (this.checkForWin()) {
-       this.gameOver();
-      }
-
-      // if chosenLetter is not in the phrase
-     } else {
-      matchingBtn.className = 'wrong';
-      this.removeLife();
-     }
+    if (onscreenBtn !== undefined) {
+     this.finishTurn(e, onscreenBtn, phrase);
     }
+   }
+  }
+
+  /**
+   * Branches code to complete player's turn depending on whether their selection matches the phrase
+   */
+  finishTurn(e, button, phrase) {
+
+   // disable the button corresponding to the click or keyup
+   button.setAttribute('disabled', '');
+
+   // if player's selection is in the phrase
+   if (phrase.checkLetter(e)) {
+    button.className = 'chosen';
+    phrase.showMatchedLetter(button.textContent);
+
+    if (this.checkForWin()) {
+     this.gameOver();
+    }
+
+    // if player's selection is not in the phrase
+   } else {
+    button.className = 'wrong';
+    this.removeLife();
    }
   }
 
