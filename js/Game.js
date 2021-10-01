@@ -42,52 +42,18 @@
   }
 
   /**
-   * Handles input when a user clicks a button or enters a letter with their physical keyboard
-   * @param (object) e - the event object - either a 'click' or a 'keyup' event
+   * Disables selected onscreen button, reveals correct guesses, and checks for win
+   * @param (object) e - the event object
+   * @param (HTMLElement) button - the onscreen button that was selected
    */
-  handleInteraction(e) {
-   const phrase = this.activePhrase;
-
-   if (e.type === 'click') {
-    const onscreenBtn = e.target;
-
-    // Continue the method ONLY IF the click occured on a button
-    if (onscreenBtn.tagName === 'BUTTON') {
-     this.finishTurn(e, onscreenBtn, phrase);
-    }
-   }
-   
-   // if interaction is keyboard input 
-   // AND selection is a lowercase letter
-   // AND the game's ready state is true
-   if (e.type === 'keyup' 
-       && /^[a-z]$/.test(e.key) 
-       && this.ready === true) {
-    const playerSelection = e.key;
-
-    /* select the HTML button element that corresponds to the player's selection **
-    ** if key has already been used, onscreenBtn will be undefined */
-    const keys = Array.from(document.getElementsByClassName('key'));
-    const onscreenBtn = keys.find(key => key.textContent === playerSelection);
-
-    if (onscreenBtn !== undefined) {
-     this.finishTurn(e, onscreenBtn, phrase);
-    }
-   }
-  }
-
-  /**
-   * Branches code to complete player's turn depending on whether their selection matches the phrase
-   */
-  finishTurn(e, button, phrase) {
-
+  handleInteraction(e, button) {
    // disable the button corresponding to the click or keyup
    button.setAttribute('disabled', '');
 
    // if player's selection is in the phrase
-   if (phrase.checkLetter(e)) {
+   if (this.activePhrase.checkLetter(e)) {
     button.className = 'chosen';
-    phrase.showMatchedLetter(button.textContent);
+    this.activePhrase.showMatchedLetter(button.textContent);
 
     if (this.checkForWin()) {
      this.gameOver();
@@ -106,7 +72,7 @@
   removeLife() {
    this.missed += 1;
 
-   // create an array containing all heart images and filter to keep only the live hearts in the array
+   // create and filter an array containing all live heart image elements
    let liveHearts = Array.from(document.querySelectorAll('#scoreboard img'));
    liveHearts = liveHearts.filter(heart => heart.src.includes('images/liveHeart.png'));
 
@@ -119,8 +85,8 @@
   }
 
   /**
-   * Check to see if the player has any hidden letters left in the phrase
-   * @returns (boolean) true means the player has won.
+   * Check to see if the player has uncovered all letters in the phrase
+   * @returns (boolean) true = all letters uncovered
    */
   checkForWin() {
    const stillHidden = Array.from(document.getElementsByClassName('hide'));
@@ -141,10 +107,10 @@
    // determine which overlay style and message to display
    if (this.missed > 4) {
     overlay.className = 'lose';
-    message.insertAdjacentHTML('beforeend', `You Lost &#128531; Better Luck Next Time!`);
+    message.insertAdjacentHTML('beforeend', `You Ran Out of Lives<br>Better Luck Next Time!<br>&#128531;`);
    } else {
     overlay.className = 'win';
-    message.insertAdjacentHTML('beforeend', `You Won &#128518; You're Amazing!`);
+    message.insertAdjacentHTML('beforeend', `You Guessed the Phrase:<br>${this.activePhrase.phrase}!<br>&#128518;`);
    }
 
    this.ready = false;

@@ -15,12 +15,28 @@ start.addEventListener('click', () => {
 
 // handle interactions with the onscreen keyboard 
 keyboard.addEventListener('click', (e) => {
- game.handleInteraction(e);
+ if (e.target.tagName === 'BUTTON') {
+  game.handleInteraction(e, e.target);
+ }
 });
 
 // handle keyboard inputs
 document.addEventListener('keyup', (e) => {
+ // prevent handler from firing if the game has not started
  if (game !== undefined) {
-  game.handleInteraction(e);
+  const playerSelection = e.key;
+
+  // if input is a lowercase letter and game state is true
+  if (/^[a-z]$/.test(playerSelection) && game.ready === true) {
+
+   /* select the HTML button element that corresponds to the player's selection **
+   ** if key has already been used, onscreenBtn will be undefined */
+   const keys = Array.from(document.getElementsByClassName('key'));
+   const onscreenBtn = keys.find(key => key.textContent === playerSelection);
+
+   if (onscreenBtn !== undefined) {
+    game.handleInteraction(e, onscreenBtn);
+   }
+  }
  }
 });
