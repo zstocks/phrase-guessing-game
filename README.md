@@ -7,7 +7,7 @@
 
   1.1 Overlay
 
-   #overlay:
+   #overlay
     -> removed border-radius property
 
    .start:
